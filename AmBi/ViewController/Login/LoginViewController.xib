@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="AmBi" customModuleProvider="target">
+            <connections>
+                <outlet property="edittingSearch" destination="qjE-Su-kj3" id="vQa-r6-P03"/>
+                <outlet property="navigatiovarew" destination="Gp8-Lq-FvP" id="fFG-94-4oz"/>
+                <outlet property="tbView" destination="BR6-Cu-oaX" id="nEG-zm-2Eh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gp8-Lq-FvP">
+                    <rect key="frame" x="0.0" y="40" width="375" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dalo_search_icon" translatesAutoresizingMaskIntoConstraints="NO" id="jfl-1m-JcJ">
+                            <rect key="frame" x="20" y="22.5" width="15" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="8lM-7n-z4o"/>
+                                <constraint firstAttribute="height" constant="15" id="HU3-rw-sd1"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Find friends" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qjE-Su-kj3">
+                            <rect key="frame" x="50" y="21.5" width="249" height="17"/>
+                            <color key="textColor" red="0.38039215686274508" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="edittingChangeAction:" destination="-1" eventType="editingChanged" id="CfO-Kw-UN4"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWG-5j-tva">
+                            <rect key="frame" x="309" y="10" width="46" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="aMQ-QU-Sci"/>
+                            </constraints>
+                            <state key="normal" image="button_compass.png"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.55686274509803924" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="qjE-Su-kj3" firstAttribute="leading" secondItem="jfl-1m-JcJ" secondAttribute="trailing" constant="15" id="0Nl-i0-gwG"/>
+                        <constraint firstItem="jfl-1m-JcJ" firstAttribute="centerY" secondItem="Gp8-Lq-FvP" secondAttribute="centerY" id="5ft-gc-k3u"/>
+                        <constraint firstAttribute="trailing" secondItem="lWG-5j-tva" secondAttribute="trailing" constant="20" id="Acs-s6-EIN"/>
+                        <constraint firstItem="lWG-5j-tva" firstAttribute="centerY" secondItem="Gp8-Lq-FvP" secondAttribute="centerY" id="KqU-bA-4NI"/>
+                        <constraint firstItem="jfl-1m-JcJ" firstAttribute="leading" secondItem="Gp8-Lq-FvP" secondAttribute="leading" constant="20" id="Ml9-iv-kzk"/>
+                        <constraint firstItem="qjE-Su-kj3" firstAttribute="centerY" secondItem="Gp8-Lq-FvP" secondAttribute="centerY" id="Upp-O8-Vtc"/>
+                        <constraint firstAttribute="height" constant="60" id="dU7-UV-fPJ"/>
+                        <constraint firstItem="lWG-5j-tva" firstAttribute="leading" secondItem="qjE-Su-kj3" secondAttribute="trailing" constant="10" id="f9W-Hq-dFk"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BR6-Cu-oaX">
+                    <rect key="frame" x="0.0" y="100" width="375" height="518"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BR6-Cu-oaX" firstAttribute="top" secondItem="Gp8-Lq-FvP" secondAttribute="bottom" id="BVH-pc-zc0"/>
+                <constraint firstItem="Gp8-Lq-FvP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="G9p-QV-ckF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BR6-Cu-oaX" secondAttribute="bottom" constant="49" id="Jsi-EE-28P"/>
+                <constraint firstItem="Gp8-Lq-FvP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KuN-U5-R9R"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gp8-Lq-FvP" secondAttribute="trailing" id="MlG-GM-oOZ"/>
+                <constraint firstItem="BR6-Cu-oaX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Sgu-ew-XKs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BR6-Cu-oaX" secondAttribute="trailing" id="jRM-Gj-Esi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_compass.png" width="40" height="40"/>
+        <image name="dalo_search_icon" width="32" height="33"/>
+    </resources>
+</document>

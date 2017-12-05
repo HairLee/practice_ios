@@ -1,0 +1,6 @@
+framework module Pods_AmBi {
+  umbrella header "Pods-AmBi-umbrella.h"
+
+  export *
+  module * { export * }
+}
