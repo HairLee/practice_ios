@@ -17,4 +17,5 @@ pod "PagingMenuController"
 pod 'Alamofire'
 pod 'ObjectMapper', '~> 2.2'
 pod "PhotoSlider"
+pod 'FSPagerView'
 end

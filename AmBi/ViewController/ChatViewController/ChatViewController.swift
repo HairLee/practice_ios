@@ -65,10 +65,10 @@ class ChatViewController: BaseViewController {
         tbView.register(UINib.init(nibName: "FirstTableViewCell", bundle: nil), forCellReuseIdentifier: cellID.firstTimeChatCell)
         
         
+    
         
         
-        
-        tbView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(handleTap)))
+//        tbView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(handleTap)))
         
         let message = Message()
         message.idMessageOfAuthor = mId
@@ -112,7 +112,18 @@ class ChatViewController: BaseViewController {
             
         }
         
+        navigationView.rightAction = {
+            
+            var chat = Chat.init(pContent: "hi", pTime: "he", pFriend: false)
+
+            
+            NotificationCenter.default.post(name:  Notification.Name(rawValue: "tabVc"), object: chat)
+         
+        }
+        
     }
+    
+   
     
     
     @IBAction func btnMapAction(_ sender: Any) {
@@ -216,8 +227,8 @@ extension ChatViewController:UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        
-        //        self.navigationController?.pushViewController(ChatDetailViewController.init(), animated: true)
+        let chatDetailVC = ChatDetailViewController.init(nibName: "ChatDetailViewController", bundle: nil)
+                self.navigationController?.pushViewController(chatDetailVC, animated: true)
         
     }
     
@@ -227,7 +238,9 @@ extension ChatViewController:UITableViewDelegate, UITableViewDataSource {
 
 
 
-
+extension Notification.Name {
+    static let tabVc = Notification.init(name: Notification.Name(rawValue: "tabVc"))
+}
 
 
 

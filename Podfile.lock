@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.5.1)
+  - FSPagerView (0.7.0)
   - GoogleMaps (2.4.0):
     - GoogleMaps/Maps (= 2.4.0)
   - GoogleMaps/Base (2.4.0)
@@ -21,6 +22,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - FSPagerView
   - GoogleMaps
   - GooglePlaces
   - IQKeyboardManagerSwift
@@ -31,6 +33,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  FSPagerView: 7042409096ef3fc050a3f5f4ccc941e8a5a2b330
   GoogleMaps: 8436ab5d1c25e36915b2f7416d0c8e3fa2e76c61
   GooglePlaces: aafe5990fa7951e98e078761bbdaaf236d7e0c65
   IQKeyboardManagerSwift: e580da046d804d2836ee84668cc17e43a850a35d
@@ -41,6 +44,6 @@ SPEC CHECKSUMS:
   Realm: 0ef72b837fb67e9f4b098bac771ddd72c7fdbb69
   RealmSwift: 07a9ae0505091eda6b2ee7c190c3786d6e90a7b0
 
-PODFILE CHECKSUM: 4b59f95fe7f0c445f2ec02731f5ff046894ef965
+PODFILE CHECKSUM: 048ed1326c597a909131a9261bce88d6a1806185
 
 COCOAPODS: 1.1.1

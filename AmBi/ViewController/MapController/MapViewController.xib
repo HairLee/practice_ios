@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="AmBi" customModuleProvider="target">
             <connections>
+                <outlet property="btnCurrent" destination="w7x-bW-7ET" id="oJw-Zj-VFQ"/>
                 <outlet property="headerDistance" destination="lYG-Pu-gTp" id="tyv-kj-57Q"/>
                 <outlet property="mapView" destination="DJK-lI-o7d" id="nYq-V3-S9N"/>
                 <outlet property="navigationView" destination="9E3-r5-oJh" id="bWS-EL-BPz"/>
@@ -41,7 +42,7 @@
                         <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DJK-lI-o7d">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
                         </mapView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7x-bW-7ET">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7x-bW-7ET" customClass="ComButton" customModule="AmBi" customModuleProvider="target">
                             <rect key="frame" x="137" y="453" width="100" height="45"/>
                             <color key="backgroundColor" red="0.346923828125" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -50,7 +51,7 @@
                             </constraints>
                             <state key="normal" title="Current"/>
                             <connections>
-                                <action selector="btnGoToCurrentLocation:" destination="-1" eventType="touchUpInside" id="XmY-QZ-JKg"/>
+                                <action selector="btnCurrent:" destination="-1" eventType="touchUpInside" id="gNE-hz-Zem"/>
                             </connections>
                         </button>
                     </subviews>

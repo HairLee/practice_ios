@@ -17,6 +17,10 @@
 		1A0B3E731F9F42EE0059F100 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0B3E711F9F42EE0059F100 /* ChatViewController.xib */; };
 		1A0B3E7C1F9F4FBE0059F100 /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B3E7A1F9F4FBE0059F100 /* ChatDetailViewController.swift */; };
 		1A0B3E7D1F9F4FBE0059F100 /* ChatDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A0B3E7B1F9F4FBE0059F100 /* ChatDetailViewController.xib */; };
+		1A1EA6271FE0C7EB006C6B5C /* SlideImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EA6251FE0C7EB006C6B5C /* SlideImageViewController.swift */; };
+		1A1EA6281FE0C7EB006C6B5C /* SlideImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1EA6261FE0C7EB006C6B5C /* SlideImageViewController.xib */; };
+		1A1EA62B1FE0D666006C6B5C /* DetailImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1EA6291FE0D666006C6B5C /* DetailImageViewController.swift */; };
+		1A1EA62C1FE0D666006C6B5C /* DetailImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1EA62A1FE0D666006C6B5C /* DetailImageViewController.xib */; };
 		1A3A813E1FD641F20085F908 /* SocialMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3A813C1FD641F20085F908 /* SocialMediaViewController.swift */; };
 		1A3A813F1FD641F20085F908 /* SocialMediaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3A813D1FD641F20085F908 /* SocialMediaViewController.xib */; };
 		1A3A81431FD6566C0085F908 /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3A81421FD6566C0085F908 /* MenuService.swift */; };
@@ -49,6 +53,8 @@
 		1A8C820B1FA2F3FC00ACD525 /* ListChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C82091FA2F3FC00ACD525 /* ListChatTableViewCell.swift */; };
 		1A8C820C1FA2F3FC00ACD525 /* ListChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8C820A1FA2F3FC00ACD525 /* ListChatTableViewCell.xib */; };
 		1A8C820E1FA311A400ACD525 /* TabBarCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C820D1FA311A400ACD525 /* TabBarCustomViewController.swift */; };
+		1A90C2BA1FDFDA840035A659 /* ComButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90C2B91FDFDA840035A659 /* ComButton.swift */; };
+		1A90C2BC1FDFDF5F0035A659 /* CheckBoxCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90C2BB1FDFDF5F0035A659 /* CheckBoxCustom.swift */; };
 		1AD40CEF1FA2127400C19F9D /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD40CEA1FA2127400C19F9D /* FriendTableViewCell.swift */; };
 		1AD40CF01FA2127400C19F9D /* FriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AD40CEB1FA2127400C19F9D /* FriendTableViewCell.xib */; };
 		1AD40CF11FA2127400C19F9D /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD40CED1FA2127400C19F9D /* ChatTableViewCell.swift */; };
@@ -75,6 +81,10 @@
 		1A0B3E711F9F42EE0059F100 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		1A0B3E7A1F9F4FBE0059F100 /* ChatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
 		1A0B3E7B1F9F4FBE0059F100 /* ChatDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatDetailViewController.xib; sourceTree = "<group>"; };
+		1A1EA6251FE0C7EB006C6B5C /* SlideImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideImageViewController.swift; sourceTree = "<group>"; };
+		1A1EA6261FE0C7EB006C6B5C /* SlideImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideImageViewController.xib; sourceTree = "<group>"; };
+		1A1EA6291FE0D666006C6B5C /* DetailImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageViewController.swift; sourceTree = "<group>"; };
+		1A1EA62A1FE0D666006C6B5C /* DetailImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailImageViewController.xib; sourceTree = "<group>"; };
 		1A3A813C1FD641F20085F908 /* SocialMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaViewController.swift; sourceTree = "<group>"; };
 		1A3A813D1FD641F20085F908 /* SocialMediaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialMediaViewController.xib; sourceTree = "<group>"; };
 		1A3A81411FD656190085F908 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
@@ -110,6 +120,8 @@
 		1A8C82091FA2F3FC00ACD525 /* ListChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChatTableViewCell.swift; sourceTree = "<group>"; };
 		1A8C820A1FA2F3FC00ACD525 /* ListChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListChatTableViewCell.xib; sourceTree = "<group>"; };
 		1A8C820D1FA311A400ACD525 /* TabBarCustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustomViewController.swift; sourceTree = "<group>"; };
+		1A90C2B91FDFDA840035A659 /* ComButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComButton.swift; sourceTree = "<group>"; };
+		1A90C2BB1FDFDF5F0035A659 /* CheckBoxCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxCustom.swift; sourceTree = "<group>"; };
 		1AD40CEA1FA2127400C19F9D /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		1AD40CEB1FA2127400C19F9D /* FriendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendTableViewCell.xib; sourceTree = "<group>"; };
 		1AD40CED1FA2127400C19F9D /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
@@ -143,6 +155,7 @@
 		1A0B3E5B1F9F23F50059F100 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1A1EA6241FE0C7D4006C6B5C /* SlideImageController */,
 				1A0B3E631F9F24A30059F100 /* Login */,
 				1AFACCC31FA20CE800957E59 /* MapController */,
 				1A3A813B1FD641C50085F908 /* SocialMediaController */,
@@ -231,6 +244,17 @@
 			);
 			name = ChatDetailViewController;
 			path = Login/ChatDetailViewController;
+			sourceTree = "<group>";
+		};
+		1A1EA6241FE0C7D4006C6B5C /* SlideImageController */ = {
+			isa = PBXGroup;
+			children = (
+				1A1EA6251FE0C7EB006C6B5C /* SlideImageViewController.swift */,
+				1A1EA6261FE0C7EB006C6B5C /* SlideImageViewController.xib */,
+				1A1EA6291FE0D666006C6B5C /* DetailImageViewController.swift */,
+				1A1EA62A1FE0D666006C6B5C /* DetailImageViewController.xib */,
+			);
+			path = SlideImageController;
 			sourceTree = "<group>";
 		};
 		1A3A813B1FD641C50085F908 /* SocialMediaController */ = {
@@ -334,6 +358,8 @@
 			isa = PBXGroup;
 			children = (
 				1A7BC2231F98B7E300C4474E /* UIButtonRadius.swift */,
+				1A90C2B91FDFDA840035A659 /* ComButton.swift */,
+				1A90C2BB1FDFDF5F0035A659 /* CheckBoxCustom.swift */,
 			);
 			path = UiCustom;
 			sourceTree = "<group>";
@@ -455,6 +481,7 @@
 			files = (
 				1A7BC2041F983ED600C4474E /* LaunchScreen.storyboard in Resources */,
 				1AFACCC71FA20D1D00957E59 /* MapViewController.xib in Resources */,
+				1A1EA6281FE0C7EB006C6B5C /* SlideImageViewController.xib in Resources */,
 				1A3A81561FD6845A0085F908 /* OneTableViewCell.xib in Resources */,
 				1AFACCBC1FA1B73E00957E59 /* FirstTableViewCell.xib in Resources */,
 				1A8C820C1FA2F3FC00ACD525 /* ListChatTableViewCell.xib in Resources */,
@@ -469,6 +496,7 @@
 				1A7BC1FF1F983ED600C4474E /* Main.storyboard in Resources */,
 				1A0B3E731F9F42EE0059F100 /* ChatViewController.xib in Resources */,
 				1A7BC2191F987E9D00C4474E /* TestDialog.xib in Resources */,
+				1A1EA62C1FE0D666006C6B5C /* DetailImageViewController.xib in Resources */,
 				1AD40CF21FA2127400C19F9D /* ChatTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,6 +573,7 @@
 				1A7BC2241F98B7E300C4474E /* UIButtonRadius.swift in Sources */,
 				1A0B3E4E1F9EF2B80059F100 /* UIView.swift in Sources */,
 				1A0B3E691F9F292F0059F100 /* BaseViewController.swift in Sources */,
+				1A90C2BC1FDFDF5F0035A659 /* CheckBoxCustom.swift in Sources */,
 				1A40D3FF1FA2D7880058241F /* Member.swift in Sources */,
 				1AD40CEF1FA2127400C19F9D /* FriendTableViewCell.swift in Sources */,
 				1A7BC20D1F98410C00C4474E /* AmTableViewCell.swift in Sources */,
@@ -555,10 +584,13 @@
 				1A7BC1FC1F983ED600C4474E /* ViewController.swift in Sources */,
 				1A3A81501FD683510085F908 /* SettingViewController.swift in Sources */,
 				1A3A81491FD65A1A0085F908 /* Constants.swift in Sources */,
+				1A90C2BA1FDFDA840035A659 /* ComButton.swift in Sources */,
 				1A7BC2121F984EA100C4474E /* UINaviViewController.swift in Sources */,
 				1A3A814C1FD65C990085F908 /* ServiceFactory.swift in Sources */,
 				1AFACCB71FA1B3CF00957E59 /* Chat.swift in Sources */,
 				1AD40CF41FA217B500C19F9D /* Dog.swift in Sources */,
+				1A1EA62B1FE0D666006C6B5C /* DetailImageViewController.swift in Sources */,
+				1A1EA6271FE0C7EB006C6B5C /* SlideImageViewController.swift in Sources */,
 				1AD40CF61FA21EB700C19F9D /* Message.swift in Sources */,
 				1A3A813E1FD641F20085F908 /* SocialMediaViewController.swift in Sources */,
 				1A7BC1FA1F983ED600C4474E /* AppDelegate.swift in Sources */,

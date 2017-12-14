@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '28AA1B7FEFF6866418BD1F20828F2C79'
-               BlueprintName = 'RealmSwift'
+               BlueprintIdentifier = 'ED279AFE7EA745A57B7B9F35AD5F2C9F'
+               BlueprintName = 'FSPagerView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RealmSwift.framework'>
+               BuildableName = 'FSPagerView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

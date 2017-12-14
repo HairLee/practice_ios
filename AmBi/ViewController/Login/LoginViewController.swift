@@ -25,6 +25,16 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         getData()
         setupUI()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(pushData), name:  Notification.Name(rawValue: "tabVc"), object: nil)
+    }
+    
+    @objc func pushData(){
+        
+        print("kkkk")
+      let dialog =   TestDialog.instanceFromNib(content: "11", image: "")
+        dialog.show()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -12,7 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController" customModule="AmBi" customModuleProvider="target">
             <connections>
-                <outlet property="imvDetail" destination="Jx4-Cb-eJh" id="JQ5-wd-7EH"/>
+                <outlet property="btnSlideImages" destination="qgt-jp-FGX" id="VRy-m6-Gac"/>
+                <outlet property="imvAva" destination="Eq5-HN-wFw" id="PfO-s6-wFl"/>
+                <outlet property="pageViewContainer" destination="mg0-yx-Hql" id="PyH-e6-5SB"/>
                 <outlet property="tbView" destination="CKc-gt-g3Z" id="MMf-Dm-cVS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -29,22 +31,42 @@
                             <rect key="frame" x="0.0" y="200" width="375" height="427"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </tableView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jx4-Cb-eJh">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mg0-yx-Hql">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eq5-HN-wFw" customClass="CheckBoxCustom" customModule="AmBi" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgt-jp-FGX">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <connections>
+                                        <action selector="btnSlideImages:" destination="-1" eventType="touchUpInside" id="jbH-eM-Znz"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="200" id="P2O-dH-PzG"/>
+                                <constraint firstItem="Eq5-HN-wFw" firstAttribute="top" secondItem="mg0-yx-Hql" secondAttribute="top" id="4nR-Z7-mQJ"/>
+                                <constraint firstItem="Eq5-HN-wFw" firstAttribute="leading" secondItem="mg0-yx-Hql" secondAttribute="leading" id="8pO-RB-f86"/>
+                                <constraint firstAttribute="height" constant="200" id="8qm-XI-5G9"/>
+                                <constraint firstAttribute="bottom" secondItem="Eq5-HN-wFw" secondAttribute="bottom" id="FAg-gV-cAj"/>
+                                <constraint firstAttribute="trailing" secondItem="Eq5-HN-wFw" secondAttribute="trailing" id="WE3-jc-z5K"/>
+                                <constraint firstItem="qgt-jp-FGX" firstAttribute="top" secondItem="mg0-yx-Hql" secondAttribute="top" id="bXq-VI-MIi"/>
+                                <constraint firstItem="qgt-jp-FGX" firstAttribute="leading" secondItem="mg0-yx-Hql" secondAttribute="leading" id="lxF-ev-Y6D"/>
+                                <constraint firstAttribute="trailing" secondItem="qgt-jp-FGX" secondAttribute="trailing" id="uUq-dH-6Qi"/>
+                                <constraint firstAttribute="bottom" secondItem="qgt-jp-FGX" secondAttribute="bottom" id="wjC-Nt-tmV"/>
                             </constraints>
-                        </imageView>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="Jx4-Cb-eJh" firstAttribute="top" secondItem="l4K-Hc-INv" secondAttribute="top" id="176-nU-6uW"/>
-                        <constraint firstItem="Jx4-Cb-eJh" firstAttribute="leading" secondItem="l4K-Hc-INv" secondAttribute="leading" id="1Pp-io-aJw"/>
+                        <constraint firstItem="mg0-yx-Hql" firstAttribute="top" secondItem="l4K-Hc-INv" secondAttribute="top" id="5vY-Xf-K0s"/>
+                        <constraint firstItem="mg0-yx-Hql" firstAttribute="leading" secondItem="l4K-Hc-INv" secondAttribute="leading" id="Nmw-U7-8eD"/>
                         <constraint firstItem="CKc-gt-g3Z" firstAttribute="leading" secondItem="l4K-Hc-INv" secondAttribute="leading" id="TPX-pu-e1B"/>
                         <constraint firstAttribute="bottom" secondItem="CKc-gt-g3Z" secondAttribute="bottom" id="TaK-f5-SCK"/>
+                        <constraint firstItem="CKc-gt-g3Z" firstAttribute="top" secondItem="mg0-yx-Hql" secondAttribute="bottom" id="UUm-ra-e2S"/>
                         <constraint firstAttribute="trailing" secondItem="CKc-gt-g3Z" secondAttribute="trailing" id="eBU-OM-z5f"/>
-                        <constraint firstItem="CKc-gt-g3Z" firstAttribute="top" secondItem="Jx4-Cb-eJh" secondAttribute="bottom" id="eO5-G3-pXd"/>
-                        <constraint firstAttribute="trailing" secondItem="Jx4-Cb-eJh" secondAttribute="trailing" id="kV1-1F-wvq"/>
+                        <constraint firstAttribute="trailing" secondItem="mg0-yx-Hql" secondAttribute="trailing" id="pwO-OP-4UB"/>
                     </constraints>
                 </view>
             </subviews>

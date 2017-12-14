@@ -72,21 +72,32 @@ class MapViewController: BaseViewController, CLLocationManagerDelegate {
         
     }
     
-    @IBAction func btnGoToCurrentLocation(_ sender: Any) {
+    @IBOutlet var btnCurrent: ComButton!
+    var isChange = false
+    @IBAction func btnCurrent(_ sender: Any) {
+        
+        isChange = !isChange
+        btnCurrent.changeState(isActive: isChange)
         
         // get Current Coor
         let currentLocation: CLLocationCoordinate2D = (manager.location?.coordinate)!
-      
+        
         
         // make maker
         let maker = MKPointAnnotation()
         maker.coordinate = CLLocationCoordinate2D(latitude: currentLocation.latitude, longitude: currentLocation.longitude)
         
-
+        
         //
         let coor = MKCoordinateRegionMakeWithDistance(currentLocation, regionRadius, regionRadius)
         mapView.setRegion(coor, animated: true)
         mapView.addAnnotation(maker)
+        
+    }
+    
+    @IBAction func btnGoToCurrentLocation(_ sender: Any) {
+        
+     
         
         
     }
